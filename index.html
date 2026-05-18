@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="CSS/todo.css">
+</head>
+<body>
+
+    <!-- LEFT SECTION START HERE-->
+    <div class="entire-section">
+
+        <!-- TOP BAR -->
+        <div class="top-bar">
+            <div class="side-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="light-icon">
+                <i class="fa-regular fa-sun"></i>
+            </div>
+        </div>
+
+
+        <div class="sidebar-section">
+
+            <!-- PROFILE SECTION START HERE-->
+            <div class="avatar">
+                <i class="fa-solid fa-circle-user"></i>
+                <h3>Savosky N</h3>
+                <p>savosky@gmail.com</p>
+                <hr>
+            </div>
+            <!-- PROFILE SECTION ENDS HERE-->
+
+            <!-- TASK & SETTINGS SECTION START HERE-->
+            <div class="todo-task">
+
+                <div class="task active-task">
+                    <div class="todo-icon">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                    <div class="my-task">
+                        <p>My Tasks</p>
+                    </div>
+                </div>
+
+                <div class="task">
+                    <div class="todo-icon">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div class="my-task">
+                        <p>Settings</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- TASK & SETTINGS SECTION ENDS HERE-->
+
+        </div>
+        <!-- SIDEBAR ENDS HERE-->
+
+        <!-- MAIN SECTION START HERE-->
+        <section id="main-section">
+
+            <h2>My Tasks</h2>
+
+            <!-- INPUT AND ADD BUTTON -->
+            <div class="first-input">
+                <input type="text" id="task-input" placeholder="Type your task here...">
+                <button id="add-btn">+ Add</button>
+            </div>
+
+            <!-- FILTER AND TASKS LEFT -->
+            <div class="filter-container">
+                <div class="filter-links">
+                    <a href="#" class="filter active-filter">All</a>
+                    <span>|</span>
+                    <a href="#" class="filter">Active</a>
+                    <span>|</span>
+                    <a href="#" class="filter">Completed</a>
+                </div>
+                <p class="tasks-left">2 tasks left</p>
+            </div>
+
+            <!-- TASK LIST -->
+            <ul class="task-list" id="task-list">
+            </ul>
+
+        </section>
+        <!-- MAIN SECTION ENDS HERE-->
+
+    </div>
+    <!-- ENTIRE SECTION ENDS HERE-->
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025</p>
+    </footer>
+
+    <script src="JS/todo.js"></script>
+</body>
+</html>
